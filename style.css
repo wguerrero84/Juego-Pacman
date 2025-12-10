@@ -1,0 +1,54 @@
+:root {
+    --bg-color: #050510;
+    --neon-blue: #00f3ff;
+    --neon-pink: #ff00ff;
+    --neon-yellow: #ffee00;
+    --text-color: #ffffff;
+    --wall-color: #1a1a3a;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.game-container {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+    letter-spacing: 2px;
+}
+
+.score-board {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 0 0 5px var(--neon-blue);
+}
+
+canvas {
+    background-color: #000;
+    border: 2px solid var(--neon-blue);
+    box-shadow: 0 0 15px var(--neon-blue), inset 0 0 20px rgba(0, 243, 255, 0.2);
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+.instructions {
+    margin-top: 15px;
+    color: #888;
+    font-size: 0.9rem;
+}
